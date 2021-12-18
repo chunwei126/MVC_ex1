@@ -1,0 +1,5 @@
+步驟一: 使用者在網頁填寫完表單後按送出
+步驟二: RegistersController 的 Create(RegisterCreateVM model) 會透過 Model Binding 驗證格式是否有誤
+步驟三: 當驗證無誤後，將 model 傳給 RegisterService 做邏輯判斷
+步驟四: RegisterService 將傳過來的 model 傳入 EFModels 裡面的 Register(DBModel)，並透過 validators 來做邏輯判斷
+步驟五: 步驟四驗證無誤後，將 Register 傳給 RegisterRepository 來傳入資料庫

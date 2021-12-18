@@ -1,0 +1,3 @@
+1. 當我在網頁按送出時，EFModels -> Register裡面的foreach (IValidator validator in Validators)會回傳"並未將物件參考設定為物件的執行個體"的錯誤訊息。
+2. 該如何將所需的驗證方法寫成一個好看的物件，讓Service可直接呼叫，而不用在Service裡面另外組驗證方法
+3. Name和Email都需要判斷長度的方法，但是兩者判斷的長度條件不同(Name10字內、Email200字內，)，該如何寫成一支可以適應所有長度的方法

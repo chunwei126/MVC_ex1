@@ -135,6 +135,12 @@
     </Compile>
     <Compile Include="Models\EFModels\AppDbContext.cs" />
     <Compile Include="Models\EFModels\Register.cs" />
+    <Compile Include="Models\Infrastructures\IValidator.cs" />
+    <Compile Include="Models\Infrastructures\MaxlengthValidator.cs" />
+    <Compile Include="Models\Infrastructures\RequiredValidator.cs" />
+    <Compile Include="Models\Repositories\RegisterRepository.cs" />
+    <Compile Include="Models\Services\RegisterService.cs" />
+    <Compile Include="Models\ViewModels\RegisterCreateVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -174,9 +180,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registers\Create.cshtml" />
-    <Content Include="Views\Registers\Delete.cshtml" />
-    <Content Include="Views\Registers\Details.cshtml" />
-    <Content Include="Views\Registers\Edit.cshtml" />
     <Content Include="Views\Registers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
